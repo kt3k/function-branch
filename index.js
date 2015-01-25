@@ -74,8 +74,20 @@
         var prototype = new proxy();
 
 
-        // apply the given class definition
-        classDefinition(prototype, parent.prototype);
+        if (typeof classDefinition === 'function') {
+
+            // apply the given class definition
+            classDefinition(prototype, parent.prototype);
+
+        } else if (classDefinition == null) {
+
+            // do nothing
+
+        } else {
+
+            throw Error('Class.branch(function (prototype, super) {...})');
+
+        }
 
 
         if (prototype.constructor === proxy.prototype.constructor) {

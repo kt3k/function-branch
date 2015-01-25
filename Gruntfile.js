@@ -10,6 +10,7 @@ module.exports = function (grunt) {
             'index.js': {
                 src: ['./index.js', './spec.js'],
                 options: {
+                    reporter: 'spec'
                 }
             }
         }
@@ -17,5 +18,7 @@ module.exports = function (grunt) {
     });
 
     require('load-grunt-tasks')(grunt);
+
+    grunt.registerTask('default', ['mocha-chai-sinon']);
 
 };
