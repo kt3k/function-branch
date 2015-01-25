@@ -1,0 +1,4 @@
+version: 1.0.0
+files:
+  README.md: function-branch v1.0.0
+  package.json: '"version": "1.0.0"'
