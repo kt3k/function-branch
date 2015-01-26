@@ -1,7 +1,6 @@
 # function-branch v1.0.0
 
-This is Function.prototype enhancement which enables developers
-to easily define classes in ES5 syntax.
+> Function.prototype enhancement which makes it easier to define classes in ES5 syntax.
 
 # Usage
 
